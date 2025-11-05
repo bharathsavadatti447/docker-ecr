@@ -6,7 +6,7 @@ pipeline {
         BRANCH     = 'main'
         AWS_REGION = 'us-east-1'
         ECR_REPO   = 'public.ecr.aws/o9v8l7j1/dockerrepo'
-        IMAGE_NAME = 'java-app'
+        IMAGE_NAME = 'node-app'
         IMAGE_TAG  = 'v1.0.0'
     }
 
