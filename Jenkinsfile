@@ -36,7 +36,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dir('java-app') {
+                    dir('node-app') {
                         sh '''
                             echo "Building Docker image..."
                             docker build -t $IMAGE_NAME:$IMAGE_TAG .
