@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO   = 'https://github.com/bharathsavadatti447/Docker-assignment_1.git'
+        GIT_REPO   = 'https://github.com/bharathsavadatti447/docker-ecr.git'
         BRANCH     = 'main'
         AWS_REGION = 'us-east-1'
         ECR_REPO   = 'public.ecr.aws/o9v8l7j1/dockerrepo'
