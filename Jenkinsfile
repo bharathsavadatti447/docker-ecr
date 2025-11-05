@@ -58,19 +58,6 @@ pipeline {
             }
         }
 
-        stage('Cleanup') {
-            steps {
-                script {
-                    sh '''
-                        echo "Cleaning up local Docker images..."
-                        docker rmi $ECR_REPO:$IMAGE_TAG || true
-                        docker rmi $IMAGE_NAME:$IMAGE_TAG || true
-                    '''
-                }
-            }
-        }
-    }
-
     post {
         success {
             echo "✅ Docker image pushed successfully to ECR: $ECR_REPO:$IMAGE_TAG"
